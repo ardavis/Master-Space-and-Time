@@ -1,0 +1,7 @@
+tr
+  th {{name}}
+  td
+    span{bindAttr class='editing:hidden:normal'}{action startEditing}
+      nightsOrdered
+    span{bindAttr class="editing:normal:hidden"}
+      Ember.TextField valueBinding='nightsOrderedInput' size='4' action='endEditing'

@@ -1,0 +1,23 @@
+h3.selected_name {{selectedTrip.name}}
+
+h3 Hotels
+table
+  each selectedTrip.hotels itemController='hotel'
+    template 'hotel_detail'
+
+  tr
+    td Total
+    td {{selectedTrip.totalHotelNights}}
+    td
+    td {{selectedTrip.totalHotelRevenue}}
+
+h3 Extras
+table
+  each selectedTrip.extras
+    template 'extra_detail'
+
+  tr
+    td Total
+    td {{selectedTrip.totalExtrasOrdered}}
+    td
+    td {{selectedTrip.totalExtraRevenue}}

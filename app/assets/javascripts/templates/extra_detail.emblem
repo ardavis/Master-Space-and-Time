@@ -1,0 +1,5 @@
+tr
+  th = name
+  td = orders
+  td $#{price}
+  td $#{revenue}

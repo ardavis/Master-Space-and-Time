@@ -1,7 +1,9 @@
 .admin_trips.span-12
   each trip in controller
     .trip_entry
-      .header{ action selectTrip trip} {{ trip.name }}
+      .header{ action selectTrip trip}
+        trip.name
+        trip.totalRevenueDisplay
       .dates {{ trip.startDateDisplay }} - {{ trip.endDateDisplay }}
       .price {{ trip.priceDisplay }}
 
@@ -9,4 +11,4 @@
   h2 Details
 
   if selectedTrip
-    h3 {{ selectedTrip.name }}
+    template 'details'
