@@ -1,0 +1,12 @@
+.admin_trips.span-12
+  each trip in controller
+    .trip_entry
+      .header{ action selectTrip trip} {{ trip.name }}
+      .dates {{ trip.startDateDisplay }} - {{ trip.endDateDisplay }}
+      .price {{ trip.priceDisplay }}
+
+.detail_view.span-12
+  h2 Details
+
+  if selectedTrip
+    h3 {{ selectedTrip.name }}

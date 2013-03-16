@@ -11,6 +11,10 @@
  *= require_self
  *= require_tree .
 */
+.hidden {
+  display: none;
+}
+
 .brand {
   float: left;
   padding-right: 8px;

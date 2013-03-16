@@ -1,5 +1,5 @@
 MasterSpaceAndTime::Application.routes.draw do
+  resources :trips
 
-  root to: 'application#index'
-
+  root to: 'trips#index'
 end
